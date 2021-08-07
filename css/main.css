@@ -1,6 +1,12 @@
+:root {
+    --primary-color: #8B5CF6;
+    --secondary-color: #6D28D9;
+    --text-color: #F5F3FF;
+}
+
 .site-header {
-    background-color: #8B5CF6;
-    color: #F5F3FF;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     font-family: monospace;
     height: 100vh;
     display: flex;
@@ -16,16 +22,16 @@
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    box-shadow: 5px 10px 8px #6D28D9;
+    box-shadow: 5px 10px 8px var(--secondary-color);
 }
 
 .primary-link{
     text-decoration: none;
     padding: 0.5rem 1rem;
-    color: #8B5CF6;
-    background-color: #F5F3FF;
+    color: var(--primary-color);
+    background-color: var(--text-color);
     border-radius: 00.5rem;
-    border: 1px solid #6D28D9;
+    border: 1px solid var(--secondary-color);
 }
 body {
     margin: 0;
